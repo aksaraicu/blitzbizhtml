@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <title>Dashboard - BlitzBiz</title>
+</head>
+<body>
+    
+    <!-- Header Section --> 
+    <header class="bg-base-100 border-b-2 z-10 mb-10">
+        <div class="container navbar">
+          <div class="navbar-start">
+              <a class="btn btn-ghost pl-1 hover:bg-white normal-case text-xl font-semibold italic">BlitzBiz</a>
+          </div>
+          <div class="navbar-center hidden lg:block">
+              <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li tabindex="0">
+                    <a>
+                      Explore
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="p-2 bg-base-100 z-10">
+                      <li><a class="font-sans">Featured listings</a></li>
+                      <li><a>Popular listings</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Blog</a></li>
+                </ul>
+          </div>
+  
+          <div class="navbar-end">
+              <div class="dropdown dropdown-end">
+                  <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                      <img src="https://placeimg.com/80/80/people" />
+                    </div>
+                  </label>
+                  <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                      <label for="my-modal-login" class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                      </label>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                  </ul>
+                </div>
+  
+              <input type="checkbox" id="my-modal-login" class="modal-toggle" />
+              <label for="my-modal-login" class="modal cursor-pointer">
+              <label class="modal-box relative p-2" for="">
+                  <div class="card-body">
+                      <h1 class="text-2xl font-bold mb-4">
+                          Login
+                      </h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="Your email" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="text" placeholder="Your password" class="input input-bordered" />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                          <label for="my-modal-register" class="justify-between label-text-alt link link-hover">Register</label>
+                          
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Login</button>
+                      </div>
+                    </div>
+              </label>
+              </label>
+  
+              <input type="checkbox" id="my-modal-register" class="modal-toggle" />
+              <label for="my-modal-register" class="modal cursor-pointer">
+              <label class="modal-box relative p-2" for="">
+                  <label for="my-modal-register" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                  <div class="card-body">
+                      <h1 class="text-2xl font-bold mb-4">
+                          <label class="justify-between">Register</label>
+                      </h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="Your email" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="text" placeholder="Your password" class="input input-bordered" />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Register</button>
+                      </div>
+                    </div>
+              </label>
+              </label>
+  
+          <div class="btm-nav z-10 md:flex lg:hidden">
+              <button class="active">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+              </button>
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+              </button>
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+              </button>
+            </div>
+        </div>
+      </header>
+      <!-- Navbar section end here -->
+
+      <!-- Single and Sidebar -->
+    <section class="flex container content">
+      <div class="flex flex-row gap-10 flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap w-full">
+
+            <!-- Sidebar -->
+            <aside class="flex basis-full sm:basis-full md:basis-full lg:basis-1/5 h-fit lg:sticky top-5">
+              <div class="card w-full bg-base-100 shadow-xl">
+                  <div class="card-body place-items-center">
+                    
+                    <div class="avatar">
+                        <div class="w-24 h-24 rounded-full">
+                          <img src="https://placeimg.com/192/192/people" />
+                        </div>
+                    </div>
+
+                    <div class="user-details gap-0 text-center mt-3">
+                        <h2 class="text-2xl font-bold text-center">Fachrul Hasan</h2>
+                        <p>fachrul.hasan@gmail.com</p>
+                    </div>
+                    
+                    <hr class="w-full my-3">
+
+                    <ul class="menu bg-base-100 rounded-box w-full">
+                        <li>
+                          <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                              </svg>
+                              Pengguna
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                              </svg>
+                              Listing
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                              </svg>
+                              Acara
+                          </a>
+                        </li>
+                      </ul>
+
+                  </div>
+                </div>
+          </aside>
+
+          <!-- Entry Content -->
+          <div class="flex flex-wrap entry-content basis-full sm:basis-full md:basis-full lg:basis-4/5 h-fit w-full">
+            <div class="card bg-base-100 w-full shadow-xl">
+              <div class="card-body">
+                
+                <h1 class="text-4xl font-bold leading-10 pb-5 w-full">Form Penjualan</h1>
+              <p class="excerpt pb-5 w-full">Tulis detil listing bisnis Anda pada form dibawah ini dengan lengkap untuk mulai menjual!</p>
+
+              <div class="form-control w-full">
+
+                <h2 class="text-xl font-bold  mb-5">Informasi Umum</h2>
+
+                <label class="label">
+                  <span class="label-text">Nama bisnis</span>
+                </label>
+                <label class="input-group basis-1/2">
+                  <input type="text" placeholder="BlitzBiz" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Slogan/Deskripsi singkat</span>
+                </label>
+                <label class="input-group basis-1/2">
+                  <input type="text" placeholder="Marketplace dan konsultasi bisnis" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Link website</span>
+                </label>
+                <label class="input-group">
+                  <input type="url" placeholder="https://blitzbiz.id" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Link kontak</span>
+                </label>
+                <label class="input-group">
+                  <input type="url" placeholder="https://blitzbiz.id/contact" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Harga</span>
+                </label>
+                <label class="input-group">
+                  <input type="number" placeholder="200000" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Deskripsi</span>
+                </label>
+                <label class="input-group">
+                  <textarea class="textarea textarea-bordered w-full resize-none" placeholder="Bisnis marketplace ini dibangun menggunakan framework WordPress..."></textarea>
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Alasan penjualan</span>
+                </label>
+                <label class="input-group">
+                  <textarea class="textarea textarea-bordered w-full resize-none" placeholder="Memiliki prioritas kerja lain..."></textarea>
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Gambar bisnis</span>
+                </label>
+                <label class="input-group">
+                  <input type="file" class="file-input file-input-bordered w-full" />                
+                </label>
+
+                <h2 class="text-xl font-bold mt-10 mb-5">Metriks</h2>
+
+                <label class="label">
+                  <span class="label-text">Hasil perbulan</span>
+                </label>
+                <label class="input-group">
+                  <input type="number" placeholder="200000" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Pengeluaran perbulan</span>
+                </label>
+                <label class="input-group">
+                  <input type="number" placeholder="200000" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Total pengunjung</span>
+                </label>
+                <label class="input-group">
+                  <input type="number" placeholder="200000" class="input input-bordered w-full" />
+                </label>
+
+                <label class="label">
+                  <span class="label-text">Pengguna aktif</span>
+                </label>
+                <label class="input-group">
+                  <input type="number" placeholder="200000" class="input input-bordered w-full" />
+                </label>
+
+                <h2 class="text-xl font-bold mt-10 mb-5">Opsional</h2>
+
+                <label class="label">
+                  <span class="label-text">Link video demo (YouTube)</span>
+                </label>
+                <label class="input-group">
+                  <input type="url" placeholder="https://youtube.com/watch" class="input input-bordered w-full" />
+                </label>
+
+              </div>
+
+
+              </div>
+            </div>
+          </div>
+          
+      </div>  
+  </section>
+      
+    <!-- Footer Section Start -->
+    <footer class="py-10 bg-base-200 text-base-content border-t-2 mt-6">
+        <div class="container footer">
+            <div>
+                <p class=" font-semibold italic text-xl">BlitzBiz</p>
+                <p>Startup Consultation Platform</p>
+              </div> 
+              <div>
+                <span class="footer-title">Layanan</span> 
+                <a class="link link-hover">Marketplace Bisnis</a> 
+                <a class="link link-hover">Konsultasi</a> 
+                <a class="link link-hover">Growth Marketing</a> 
+              </div> 
+              <div>
+                <span class="footer-title">Perusahaan</span> 
+                <a class="link link-hover">Tentang BlitzBiz</a> 
+                <a class="link link-hover">Kontak</a> 
+                <a class="link link-hover">Press Release</a>
+              </div> 
+              <div>
+                <span class="footer-title">Legal</span> 
+                <a class="link link-hover">Persyaratan Penggunaan</a> 
+                <a class="link link-hover">Kebijakan Privasi</a> 
+                <a class="link link-hover">Kebijakan Cookie</a>
+              </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+</body>
+</html>

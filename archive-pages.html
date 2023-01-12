@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <title>BlitzBiz</title>
+  </head>
+  <body>
+      <!-- Header Section --> 
+      <header class="bg-base-100 border-b-2 z-10">
+        <div class="container navbar">
+          <div class="navbar-start">
+              <a class="btn btn-ghost pl-1 hover:bg-white normal-case text-xl font-semibold italic">BlitzBiz</a>
+          </div>
+          <div class="navbar-center hidden lg:block">
+              <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li tabindex="0">
+                    <a>
+                      Explore
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="p-2 bg-base-100 z-10">
+                      <li><a class="font-sans">Featured listings</a></li>
+                      <li><a>Popular listings</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Blog</a></li>
+                </ul>
+          </div>
+  
+          <div class="navbar-end">
+              <div class="dropdown dropdown-end">
+                  <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                      <img src="https://placeimg.com/80/80/people" />
+                    </div>
+                  </label>
+                  <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                      <label for="my-modal-login" class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                      </label>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                  </ul>
+                </div>
+  
+              <input type="checkbox" id="my-modal-login" class="modal-toggle" />
+              <label for="my-modal-login" class="modal cursor-pointer">
+              <label class="modal-box relative p-2" for="">
+                  <div class="card-body">
+                      <h1 class="text-2xl font-bold mb-4">
+                          Login
+                      </h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="Your email" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="text" placeholder="Your password" class="input input-bordered" />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                          <label for="my-modal-register" class="justify-between label-text-alt link link-hover">Register</label>
+                          
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Login</button>
+                      </div>
+                    </div>
+              </label>
+              </label>
+  
+              <input type="checkbox" id="my-modal-register" class="modal-toggle" />
+              <label for="my-modal-register" class="modal cursor-pointer">
+              <label class="modal-box relative p-2" for="">
+                  <label for="my-modal-register" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                  <div class="card-body">
+                      <h1 class="text-2xl font-bold mb-4">
+                          <label class="justify-between">Register</label>
+                      </h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="Your email" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="text" placeholder="Your password" class="input input-bordered" />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Register</button>
+                      </div>
+                    </div>
+              </label>
+              </label>
+  
+          <div class="btm-nav z-10 md:flex lg:hidden">
+              <button class="active">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+              </button>
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+              </button>
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+              </button>
+            </div>
+        </div>
+      </header>
+      <!-- Navbar section end here -->
+    
+      <!-- archive content -->
+      <div class="container mt-5">
+        <h2 class="font-medium text-lg mb-[30px] text-center">Telusuri yang sedang dijual</h2>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://awsimages.detik.net.id/community/media/visual/2019/05/03/df6af1b5-8c91-4f60-a6ca-34182a9f42d7_169.jpeg?w=700&q=90" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">DOTA 2 
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Game</span>
+              <span class="badge badge-outline">MOBA</span>
+            </div>
+          </h2>
+            <p>Dota 2 is a 2013 multiplayer online battle arena (MOBA) video game by Valve.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 100.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-100 shadow-xl mt-8">
+          <figure><img src="https://static8.depositphotos.com/1012223/980/i/600/depositphotos_9803930-stock-photo-demo-cubes.jpg" alt="product" class="lg:w-[500px] h-full"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">Thing
+              <div class="flex gap-2 lg:gap-1 text-center">
+              <span class="badge badge-outline">Category</span>
+              <span class="badge badge-outline">Sub-Category</span>
+            </div>
+          </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="card-actions justify-end">
+              <p class="text-xl text-[#393E46]">Rp. 11.00.000.000</p>
+              <button class="btn btn-outline">VIEW</button>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination Start -->
+        <div class="btn-group pt-6">
+          <button class="btn btn-sm btn-active">1</button>
+          <button class="btn btn-sm ">2</button>
+          <button class="btn btn-sm">3</button>
+          <button class="btn btn-sm">4</button>
+        </div>
+      </div>
+      <!-- Pagination End -->
+       <!-- Footer Section Start -->
+    <footer class="py-10 bg-base-200 text-base-content border-t-2 mt-6">
+      <div class="container footer">
+          <div>
+              <p class=" font-semibold italic text-xl">BlitzBiz</p>
+              <p>Startup Consultation Platform</p>
+            </div> 
+            <div>
+              <span class="footer-title">Layanan</span> 
+              <a class="link link-hover">Marketplace Bisnis</a> 
+              <a class="link link-hover">Konsultasi</a> 
+              <a class="link link-hover">Growth Marketing</a> 
+            </div> 
+            <div>
+              <span class="footer-title">Perusahaan</span> 
+              <a class="link link-hover">Tentang BlitzBiz</a> 
+              <a class="link link-hover">Kontak</a> 
+              <a class="link link-hover">Press Release</a>
+            </div> 
+            <div>
+              <span class="footer-title">Legal</span> 
+              <a class="link link-hover">Persyaratan Penggunaan</a> 
+              <a class="link link-hover">Kebijakan Privasi</a> 
+              <a class="link link-hover">Kebijakan Cookie</a>
+            </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+  </body>
+</html>
