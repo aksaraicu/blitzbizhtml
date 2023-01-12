@@ -9,6 +9,298 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Header Section --> 
+    <header class="bg-base-100 border-b-2 z-10">
+        <div class="container navbar">
+          <div class="navbar-start">
+              <a class="btn btn-ghost pl-1 hover:bg-white normal-case text-xl font-semibold italic">BlitzBiz</a>
+          </div>
+          <div class="navbar-center hidden lg:block">
+              <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li tabindex="0">
+                    <a>
+                      Explore
+                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                    </a>
+                    <ul class="p-2 bg-base-100 z-10">
+                      <li><a class="font-sans">Featured listings</a></li>
+                      <li><a>Popular listings</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Blog</a></li>
+                </ul>
+          </div>
+  
+          <div class="navbar-end">
+              <div class="dropdown dropdown-end">
+                  <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                      <img src="https://placeimg.com/80/80/people" />
+                    </div>
+                  </label>
+                  <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                      <label for="my-modal-login" class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                      </label>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                  </ul>
+                </div>
+  
+              <input type="checkbox" id="my-modal-login" class="modal-toggle" />
+              <label for="my-modal-login" class="modal cursor-pointer">
+              <label class="modal-box relative p-2" for="">
+                  <div class="card-body">
+                      <h1 class="text-2xl font-bold mb-4">
+                          Login
+                      </h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="Your email" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="text" placeholder="Your password" class="input input-bordered" />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                          <label for="my-modal-register" class="justify-between label-text-alt link link-hover">Register</label>
+                          
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Login</button>
+                      </div>
+                    </div>
+              </label>
+              </label>
+  
+              <input type="checkbox" id="my-modal-register" class="modal-toggle" />
+              <label for="my-modal-register" class="modal cursor-pointer">
+              <label class="modal-box relative p-2" for="">
+                  <label for="my-modal-register" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                  <div class="card-body">
+                      <h1 class="text-2xl font-bold mb-4">
+                          <label class="justify-between">Register</label>
+                      </h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="text" placeholder="Your email" class="input input-bordered" />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="text" placeholder="Your password" class="input input-bordered" />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary">Register</button>
+                      </div>
+                    </div>
+              </label>
+              </label>
+  
+          <div class="btm-nav z-10 md:flex lg:hidden">
+              <button class="active">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+              </button>
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+              </button>
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+              </button>
+            </div>
+        </div>
+      </header>
+      <!-- Navbar section end here -->
+  
+      <!-- Hero section start here -->
+        <section class="hero min-h-[400px] bg-base-200">
+          <div class="hero-content text-center">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold">BlitzBiz</h1>
+              <p class="py-6">Satu platform untuk solusi semua permasalahan bisnis Anda.</p>
+              <button class="btn btn-[#0D0D0D]">MULAI SEKARANG</button>
+            </div>
+          </div>
+        </section>
+      <!-- Hero Section End Here -->
+  
+      <!-- Content Section Start Here -->
+      <section class="container mt-5">
+        <h2 class="font-medium text-lg mb-[30px] text-center">FEATURED LISTING</h2>
+        <div class="grid gap-y-8 justify-center md:grid-cols-custom md:gap-x-16">
+          <div class="card w-96 bg-base-100 shadow-xl card-bordered">
+            <figure>
+                <img src="https://placeimg.com/400/225/arch" alt="Product"  />
+              </figure>
+            <div class="card-body">
+              <div class="mt-2">
+                <div class="badge badge-outline">Tech</div> 
+                  <div class="badge badge-outline">Front-End</div>
+                </div>
+              <h2 class="card-title">
+                Thing
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl card-bordered">
+            <figure>
+                <img src="https://placeimg.com/400/225/arch" alt="Product"  />
+              </figure>
+            <div class="card-body">
+              <div class="mt-2">
+                <div class="badge badge-outline">Tech</div> 
+                  <div class="badge badge-outline">Front-End</div>
+                </div>
+              <h2 class="card-title">
+                Thing
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl card-bordered">
+            <figure>
+                <img src="https://placeimg.com/400/225/arch" alt="Product"  />
+              </figure>
+            <div class="card-body">
+              <div class="mt-2">
+                <div class="badge badge-outline">Tech</div> 
+                  <div class="badge badge-outline">Front-End</div>
+                </div>
+              <h2 class="card-title">
+                Thing
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl card-bordered">
+            <figure>
+                <img src="https://placeimg.com/400/225/arch" alt="Product"  />
+              </figure>
+            <div class="card-body">
+              <div class="mt-2">
+                <div class="badge badge-outline">Tech</div> 
+                  <div class="badge badge-outline">Front-End</div>
+                </div>
+              <h2 class="card-title">
+                Thing
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl card-bordered">
+            <figure>
+                <img src="https://placeimg.com/400/225/arch" alt="Product"  />
+              </figure>
+            <div class="card-body">
+              <div class="mt-2">
+                <div class="badge badge-outline">Tech</div> 
+                  <div class="badge badge-outline">Front-End</div>
+                </div>
+              <h2 class="card-title">
+                Thing
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl card-bordered">
+            <figure>
+                <img src="https://placeimg.com/400/225/arch" alt="Product"  />
+              </figure>
+            <div class="card-body">
+              <div class="mt-2">
+                <div class="badge badge-outline">Tech</div> 
+                  <div class="badge badge-outline">Front-End</div>
+                </div>
+              <h2 class="card-title">
+                Thing
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- first content section end here -->
+  
+       <!-- Ads Section  -->
+       <section class="container px-10 py-20 flex flex-col md:flex-row md:justify-center">
+        <!-- first ads -->
+        <div class="text-center">
+          <img src="https://indiemaker.co/assets/list-fdd459addfcbf67037fbdd9fedfb5acba2b27da078042f6f8c19addca1cfcc5e.svg" alt="ads-photos" class="inline-block">
+          <h4 class="font-semibold mt-[10px] mb-5">Lorem ipsum dolor sit amet.</h4>
+          <p class="mb-4 xl:mr-8">Lorem ipsum dolor sit, amet consectetur adipisicing<br/> Mollitia, reprehenderit? Suscipit praesentium ipsum</p>
+        </div>
+        <!-- second ads -->
+        <div class="text-center">
+          <img src="https://indiemaker.co/assets/offer-bdedbef598756004440d0926e660148bebc8d9800c331f63d5ccb9a1bb1d09b0.svg" alt="ads-photos" class="inline-block">
+          <h4 class="font-semibold mt-[10px] mb-5">Lorem ipsum dolor sit amet.</h4>
+          <p class="mb-4 xl:mr-8">Lorem ipsum dolor sit, amet consectetur adipisicing<br/> Mollitia, reprehenderit? Suscipit praesentium ipsum</p>
+        </div>
+        <!-- third ads -->
+        <div class="text-center">
+          <img src="https://indiemaker.co/assets/pay-bc40b156a4f301200fff742726fdc3d04a003a4d6599fb5e4a9d6c6ede686a04.svg" alt="ads-photos" class="inline-block">
+          <h4 class="font-semibold mt-[10px] mb-5">Lorem ipsum dolor sit amet.</h4>
+          <p class="mb-4 xl:mr-8">Lorem ipsum dolor sit, amet consectetur adipisicing<br/> Mollitia, reprehenderit? Suscipit praesentium ipsum</p>
+        </div>
+      </section>
+      <!-- Ads Section End -->
+  
+       <!-- CTA Section Start -->
+       <section class="text-center px-10 pb-24">
+        <h3 class="text-3xl mb-5 font-semibold">Ayo Daftar BlitBiz Sekarang!</h3>
+        <p class="mb-5">Jadilah bagian dari komunitas kreatif dari 1,500 kreator, seperti anda!</p>
+        <button class="btn mt-[10px]">DAFTAR SEKARANG</button>
+      </section>
+      <!-- CTA Section End -->
+  
+      <!-- Footer Section Start -->
+      <footer class="py-10 bg-base-200 text-base-content border-t-2 mt-6">
+        <div class="container footer">
+            <div>
+                <p class=" font-semibold italic text-xl">BlitzBiz</p>
+                <p>Startup Consultation Platform</p>
+              </div> 
+              <div>
+                <span class="footer-title">Layanan</span> 
+                <a class="link link-hover">Marketplace Bisnis</a> 
+                <a class="link link-hover">Konsultasi</a> 
+                <a class="link link-hover">Growth Marketing</a> 
+              </div> 
+              <div>
+                <span class="footer-title">Perusahaan</span> 
+                <a class="link link-hover">Tentang BlitzBiz</a> 
+                <a class="link link-hover">Kontak</a> 
+                <a class="link link-hover">Press Release</a>
+              </div> 
+              <div>
+                <span class="footer-title">Legal</span> 
+                <a class="link link-hover">Persyaratan Penggunaan</a> 
+                <a class="link link-hover">Kebijakan Privasi</a> 
+                <a class="link link-hover">Kebijakan Cookie</a>
+              </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 </body>
 </html>
